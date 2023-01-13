@@ -1,0 +1,63 @@
+:root {
+    --card-border-radius: 10px;
+    --card-height: 340px;
+    --card-img-brightness: 75%;
+    --card-title-font-size: 17px;
+    --card-title-position: 20px;
+    --liste-logements-bg: #f6f6f6;
+    --liste-logements-padding: 55px 50px;
+    --liste-logements-gap: 50px 60px;
+}
+
+.liste-logements {
+    background-color: var(--liste-logements-bg);
+    border-radius: 25px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: var(--liste-logements-gap);
+    padding: var(--liste-logements-padding);
+}
+
+.card {
+    border-radius: var(--card-border-radius);
+    height: 100%;
+    min-height: var(--card-height);
+    position: relative;
+}
+
+.card-img {
+    border-radius: var(--card-border-radius);
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    filter: brightness(var(--card-img-brightness));
+}
+
+.card-title {
+    font-weight: bold;
+    color: white;
+    left: var(--card-title-position);
+    bottom: var(--card-title-position);
+    font-size: var(--card-title-font-size);
+    margin-right: var(--card-title-position);
+    position: absolute;
+}
+
+@media screen and (max-width: 992px) {
+    .liste-logements {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --liste-logements-bg: white;
+        --liste-logements-padding: 0px;
+    }
+    .liste-logements {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        min-height: 255px;
+    }
+}

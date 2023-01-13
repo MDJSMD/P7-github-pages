@@ -1,0 +1,17 @@
+@import "../styles/banner.css";
+@import "../styles/card.css";
+@import "../styles/error.css";
+@import "../styles/footer.css";
+@import "../styles/header.css";
+@import "../styles/home.css";
+@import "../styles/collapse.css";
+@import "../styles/tag.css";
+@import "../styles/logementsinfos.css";
+@import "../styles/carrousel.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;   
+}
+
+

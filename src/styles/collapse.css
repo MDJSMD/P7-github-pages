@@ -1,0 +1,83 @@
+:root {
+  --collapse-border-radius: 12px;
+  --collapse-margin-bottom: 35px;
+  --collapse-head-bg: #ff6060;
+  --collapse-title-color: #ffffff;
+  --collapse-title-size: 23px;
+  --collapse-description-bg: #f6f6f6;
+  --collapse-description-color: #ff6060;
+  --collapse-description-size: 23px;
+  --collapse-arrow-margin-right: 10px;
+  }
+  
+  .collapse-box {
+  border-radius: var(--collapse-border-radius);
+  margin-bottom: var(--collapse-margin-bottom);
+  text-align: center;
+  }
+  
+  .collapse-head {
+  margin-bottom: -8px; /* ---------*/
+  align-items: center;
+  background-color: var(--collapse-head-bg);
+  border-radius: var(--collapse-border-radius);
+  display: inline-flex;
+  height: 25%;
+  min-height: 50px;
+  width: 90%;
+  }
+  
+  .collapse-title {
+  color: var(--collapse-title-color);
+  font-size: var(--collapse-title-size);
+  height: 50px;
+  line-height: 50px;
+  margin: 5px 10px;
+  }
+  
+  .collapse-arrow {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: var(--collapse-arrow-margin-right);
+  width: 100%;
+  }
+  
+  .collapse-arrow.true {
+  justify-content: start;
+  transform: rotate(-180deg);
+  }
+  
+  .collapse-description {
+  padding-top: 23px; /**/
+  background-color: var(--collapse-description-bg);
+  border-bottom-left-radius: var(--collapse-border-radius);
+  border-bottom-right-radius: var(--collapse-border-radius);
+  color: var(--collapse-description-color);
+  font-size: var(--collapse-description-size);
+  width: 90%;
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100px;
+  text-align: left;
+  text-align: justify;
+  }
+  
+  @media screen and (max-width: 768px) {
+  :root {
+  --collapse-title-size: 16px;
+  --collapse-description-size: 16px;
+  }
+  .collapse-head {
+    width: 100%;
+}
+
+.description-equipements {
+    flex-direction: column;
+}
+
+.collapse-description {
+    width: 100%;
+    font-size: var(--collapse-description-size);
+}
+}

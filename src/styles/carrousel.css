@@ -1,0 +1,80 @@
+:root {
+    --carrousel-height: 415px;
+    --arrow-width: 45px;
+    --arrow-margin: 25px;
+    --arrow-hover-shadow: 2px 4px 6px black;
+    --img-border-radius: 20px;
+    }
+    
+    .carrousel {
+    position: relative;
+    width: 100%;
+    height: var(--carrousel-height);
+    margin: 30px auto;
+    display: block;
+    }
+    
+    .left-arrow, .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--arrow-width);
+    z-index: 1;
+    }
+    
+    .left-arrow {
+    margin-left: var(--arrow-margin);
+    }
+    
+    .right-arrow {
+    margin-right: var(--arrow-margin);
+    right: 0;
+    }
+    
+    .left-arrow:hover, .right-arrow:hover {
+    cursor: pointer;
+    filter: drop-shadow(var(--arrow-hover-shadow));
+    }
+    
+    .carrousel-img {
+    object-fit: cover;
+    border-radius: var(--img-border-radius);
+    width: 100%;
+    height: var(--carrousel-height);
+    display: none;
+    }
+    
+    .carrousel-img.actif {
+    display: block;
+    }
+    
+    @media screen and (max-width: 768px) {
+    :root {
+    --carrousel-height: 280px;
+    --arrow-width: 25px;
+    }
+    .carrousel {
+        height: var(--carrousel-height);
+    }
+    
+    .left-arrow, .right-arrow {
+        width: var(--arrow-width);
+    }
+    
+    .carrousel-img {
+        height: var(--carrousel-height);
+    }
+    }
+
+    .CompteurImages {
+        position: absolute;
+        bottom: 10px; 
+        left: 50%; 
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 20px; 
+        color: white;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+ 
+
+      }
