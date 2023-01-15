@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; //Importation des composant react
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import BannerIMG from "../assets/BG-HOME.png";

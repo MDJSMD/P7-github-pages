@@ -1,3 +1,4 @@
+//Importation des modules React
 import React from 'react';
 //Création d'une focntion pour afficher une bannière contenant du texte et une image
 const Banner = ({image, texte}) => {

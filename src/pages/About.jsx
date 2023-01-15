@@ -1,4 +1,6 @@
+//Importation des composant react
 import React, { useState } from "react";
+// Importation des composants de l'application
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -14,12 +16,13 @@ const About = () => {
   ];
   return (
     <div>
-      <Header />
+      <Header /> {/* Affichage du Header */}
       <Banner image={ImgAbout} />
-{aboutInfo.map((item, index) => (
+      {/* Génération des composants Collapse */}
+{aboutInfo.map((item, index) => ( 
 <Collapse key={index} title={item.title} description={item.description} />
 ))}
-<Footer />
+<Footer /> {/* Affichage du Footer */}
 </div>
 );
 };

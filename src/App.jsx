@@ -1,10 +1,13 @@
 //Importation des modules 
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// Importation des différentes pages de l'application
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Error from "./pages/Error404";
 import Logements from "./pages/Logements";
+// Importation des styles CSS de l'application
+
 import "./styles/index.css";
 
 //Définition du chemin de mes routes

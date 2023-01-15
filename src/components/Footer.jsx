@@ -1,3 +1,4 @@
+//Importation des modules React
 import React from 'react';
 import logo from "../assets/LOGO-footer.png";
 
