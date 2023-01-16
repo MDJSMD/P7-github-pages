@@ -64,6 +64,9 @@
     .carrousel-img {
         height: var(--carrousel-height);
     }
+    .CompteurImages {
+        display: none;
+      }
     }
 
     .CompteurImages {
